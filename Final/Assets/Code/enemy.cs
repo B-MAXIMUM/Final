@@ -17,7 +17,7 @@ public class enemy : MonoBehaviour
         if (Vector3.Distance(player.position, this.transform.posotion) < 10)
         {
             Vector3 direction = player.position - this.transform.positiion;
-            this.transforn.rotation = Quanternion.Slerp(this.transfrm.rotation, Quanternion.LookRoration(direction), 0.1f);
+            this.transform.rotation = Quanternion.Slerp(this.transform.rotation, Quanternion.LookRoration(direction), 0.1f);
             if (direction.manitude > 5)
             {
                 this.transform.Translate(0, 0, 0.05f);
