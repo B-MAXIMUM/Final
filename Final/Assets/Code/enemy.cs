@@ -14,11 +14,11 @@ public class enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(player.position, this.transform.posotion) < 10)
+        if (Vector3.Distance(player.position, this.transform.position) < 10)
         {
-            Vector3 direction = player.position - this.transform.positiion;
-            this.transform.rotation = Quanternion.Slerp(this.transform.rotation, Quanternion.LookRoration(direction), 0.1f);
-            if (direction.manitude > 5)
+            Vector3 direction = player.position - this.transform.position;
+            this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(direction), 0.1f);
+            if (direction.magnitude > 5)
             {
                 this.transform.Translate(0, 0, 0.05f);
             }
