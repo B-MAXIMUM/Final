@@ -25,4 +25,15 @@ public class Player : MonoBehaviour
 
         transform.Translate(xValue, 0f, zValue);
     }
+    private void OnCollisionEnter(Collision other)
+    {
+        if(other.gameObject.CompareTag("Heal"))
+        {
+
+        }
+        if(other.gameObject.CompareTag("Enemy"))
+        {
+
+        }
+    }
 }
