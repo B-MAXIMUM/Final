@@ -24,32 +24,36 @@ public class Gamemanager : MonoBehaviour
     {
         
     }
-    void playbutton()
+    public void playbutton()
     {
         Time.timeScale = 1;
     }
-    void pausebutton()
+    public void pausebutton()
     {
         Time.timeScale = 0;
         Paused.gameObject.SetActive(true);
         gameUi.gameObject.SetActive(false);
     }
-    void restartbutton()
+    public void restartbutton()
     {
         SceneManager.LoadScene("0");
     }
-    void quitbutton()
+    public void quitbutton()
     {
         
     }
-    void Resumebutton()
+    public void Resumebutton()
     {
         Time.timeScale = 1;
         Paused.gameObject.SetActive(false);
         gameUi.gameObject.SetActive(true);
     }
-    void gameover()
+    public void gameover()
     {
         Time.timeScale = 0;
+    }
+    public void help()
+    {
+
     }
 }
