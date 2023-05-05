@@ -12,6 +12,7 @@ public class Gamemanager : MonoBehaviour
     public GameObject gameUi;
     public GameObject gameoverpannel;
     public GameObject HelpPanel;
+    public GameObject winner;
 
 
     void Start()
@@ -27,6 +28,8 @@ public class Gamemanager : MonoBehaviour
     public void playbutton()
     {
         Time.timeScale = 1;
+        gameUi.gameObject.SetActive(true);
+        Mainmenue.gameObject.SetActive(false);
     }
     public void pausebutton()
     {
@@ -54,6 +57,13 @@ public class Gamemanager : MonoBehaviour
     }
     public void help()
     {
-
+        Mainmenue.gameObject.SetActive(false);
+        HelpPanel.gameObject.SetActive(true);
+    }
+    public void win()
+    {
+        Time.timeScale = 0;
+        winner.gameObject.SetActive(true);
+        gameUi.gameObject.SetActive(false);
     }
 }
