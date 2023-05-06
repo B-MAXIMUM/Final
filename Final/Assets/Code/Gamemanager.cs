@@ -3,18 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class Gamemanager : MonoBehaviour
 {
     // Start is called before the first frame update
+    public static Gamemanager Instance;
     public GameObject Mainmenue;
     public GameObject Paused;
     public GameObject gameUi;
     public GameObject gameoverpannel;
     public GameObject HelpPanel;
     public GameObject winner;
-
-
+    public Slider Health;
+    public TextMeshProUGUI thing;
+    [SerializeField] private int MaxHP;
+    [SerializeField] private int CurrentHp;
+    void Awake()
+    {
+        Instance = this;
+    }
     void Start()
     {
         Time.timeScale = 0;
