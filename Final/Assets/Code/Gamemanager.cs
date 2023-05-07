@@ -16,7 +16,6 @@ public class Gamemanager : MonoBehaviour
     public GameObject HelpPanel;
     public GameObject winner;
     public Slider Health;
-    public TextMeshProUGUI thing;
     [SerializeField] private int MaxHP;
     [SerializeField] private int CurrentHp;
     void Awake()
