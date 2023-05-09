@@ -46,7 +46,7 @@ public class Gamemanager : MonoBehaviour
     }
     public void restartbutton()
     {
-        SceneManager.LoadScene("0");
+        SceneManager.LoadScene(0);
     }
     public void quitbutton()
     {
@@ -61,6 +61,8 @@ public class Gamemanager : MonoBehaviour
     public void gameover()
     {
         Time.timeScale = 0;
+        gameoverpannel.gameObject.SetActive(true);
+        gameUi.gameObject.SetActive(false);
     }
     public void help()
     {
@@ -72,5 +74,23 @@ public class Gamemanager : MonoBehaviour
         Time.timeScale = 0;
         winner.gameObject.SetActive(true);
         gameUi.gameObject.SetActive(false);
+    }
+    public void looseHpOrDeath()
+    {
+        if(CurrentHp > 1)
+        {
+            CurrentHp = CurrentHp - 1;
+        }
+        else
+        {
+            gameover();
+        }
+    }
+    public void GainHp()
+    {
+        if (CurrentHp < MaxHP)
+        {
+            CurrentHp = CurrentHp + 1;
+        }
     }
 }

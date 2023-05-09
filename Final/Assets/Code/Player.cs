@@ -29,11 +29,11 @@ public class Player : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Heal"))
         {
-
+            Gamemanager.Instance.GainHp();
         }
         if(other.gameObject.CompareTag("Enemy"))
         {
-
+            Gamemanager.Instance.looseHpOrDeath();
         }
     }
 }
