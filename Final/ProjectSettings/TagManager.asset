@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Win
   - Enemy
+  - Heal
   layers:
   - Default
   - TransparentFX

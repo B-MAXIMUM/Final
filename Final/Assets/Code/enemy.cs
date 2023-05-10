@@ -18,7 +18,7 @@ public class enemy : MonoBehaviour
         {
             Vector3 direction = player.position - this.transform.position;
             this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(direction), 0.1f);
-            if (direction.magnitude > 5)
+            if (direction.magnitude > 0.5f)
             {
                 this.transform.Translate(0, 0, 0.05f);
             }
