@@ -25,12 +25,14 @@ public class Gamemanager : MonoBehaviour
     void Start()
     {
         Time.timeScale = 0;
+        Health.maxValue = MaxHP;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        Health.value = CurrentHp;
     }
     public void playbutton()
     {
@@ -79,7 +81,7 @@ public class Gamemanager : MonoBehaviour
     {
         if(CurrentHp > 1)
         {
-            CurrentHp = CurrentHp - 1;
+            StartCoroutine(Hploss());
         }
         else
         {
@@ -92,5 +94,11 @@ public class Gamemanager : MonoBehaviour
         {
             CurrentHp = CurrentHp + 1;
         }
+    }
+    IEnumerator Hploss()
+    {
+        yield return new WaitForSeconds(3f);
+        CurrentHp = CurrentHp - 1;
+        
     }
 }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.45139807, g: 0.5008937, b: 0.5723304, a: 1}
+  m_IndirectSpecularColor: {r: 0.45139843, g: 0.50089425, b: 0.57233065, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1467,7 +1467,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 34362935}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 4.0749354, z: 1}
@@ -1485,6 +1485,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1917419212}
+  GetEmBoys: 0
 --- !u!4 &34362938 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e6994b46315bf0144be06696474b9c8e, type: 3}
@@ -1504,7 +1505,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 84
   m_CollisionDetection: 0
 --- !u!1001 &36987851
 PrefabInstance:
@@ -8747,6 +8748,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1917419212}
+  GetEmBoys: 0
 --- !u!65 &260033365
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8755,7 +8757,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 260033363}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 4.0749354, z: 1}
@@ -8774,7 +8776,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 84
   m_CollisionDetection: 0
 --- !u!1 &260836336 stripped
 GameObject:
@@ -9267,6 +9269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1917419212}
+  GetEmBoys: 0
 --- !u!65 &271309578
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9275,7 +9278,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 271309576}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 4.0749354, z: 1}
@@ -9294,7 +9297,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 84
   m_CollisionDetection: 0
 --- !u!1001 &272040308
 PrefabInstance:
@@ -9499,7 +9502,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 84
   m_CollisionDetection: 0
 --- !u!114 &280287139
 MonoBehaviour:
@@ -9514,6 +9517,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1917419212}
+  GetEmBoys: 0
 --- !u!65 &280287140
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9522,7 +9526,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 280287137}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 4.0749354, z: 1}
@@ -10600,7 +10604,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 318747927}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 4.0749354, z: 1}
@@ -10618,6 +10622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1917419212}
+  GetEmBoys: 0
 --- !u!4 &318747930 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e6994b46315bf0144be06696474b9c8e, type: 3}
@@ -10637,7 +10642,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 84
   m_CollisionDetection: 0
 --- !u!4 &319633398 stripped
 Transform:
@@ -10940,7 +10945,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'So some human slept with your wife and now you want to get back by steal
+  m_text: 'So some ghost slept with your wife and now you want to get back by steal
     ing some treasure he wants from a dungeon
 
 
@@ -13969,6 +13974,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1917419212}
+  GetEmBoys: 0
 --- !u!65 &410167767
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13977,7 +13983,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410167765}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 4.0749354, z: 1}
@@ -13996,7 +14002,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 84
   m_CollisionDetection: 0
 --- !u!4 &411244070 stripped
 Transform:
@@ -14401,6 +14407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1917419212}
+  GetEmBoys: 0
 --- !u!65 &417994140
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14409,7 +14416,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 417994138}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 4.0749354, z: 1}
@@ -14428,7 +14435,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 84
   m_CollisionDetection: 0
 --- !u!1 &418437677 stripped
 GameObject:
@@ -15096,6 +15103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1917419212}
+  GetEmBoys: 0
 --- !u!65 &439319659
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15104,7 +15112,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 439319657}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 4.0749354, z: 1}
@@ -15123,7 +15131,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 84
   m_CollisionDetection: 0
 --- !u!4 &439909519 stripped
 Transform:
@@ -16819,6 +16827,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1917419212}
+  GetEmBoys: 0
 --- !u!65 &496686309
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16827,7 +16836,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 496686307}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 4.0749354, z: 1}
@@ -16846,7 +16855,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 84
   m_CollisionDetection: 0
 --- !u!4 &499353669 stripped
 Transform:
@@ -18653,6 +18662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1917419212}
+  GetEmBoys: 0
 --- !u!65 &554402322
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18661,7 +18671,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 554402320}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 4.0749354, z: 1}
@@ -18680,7 +18690,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 84
   m_CollisionDetection: 0
 --- !u!1 &554610353 stripped
 GameObject:
@@ -20352,6 +20362,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1917419212}
+  GetEmBoys: 0
 --- !u!65 &616591885
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20360,7 +20371,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 616591883}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 4.0749354, z: 1}
@@ -20379,7 +20390,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 84
   m_CollisionDetection: 0
 --- !u!4 &617229270 stripped
 Transform:
@@ -20958,10 +20969,10 @@ MonoBehaviour:
   gameUi: {fileID: 601750851}
   gameoverpannel: {fileID: 760101619}
   HelpPanel: {fileID: 1984044622}
-  winner: {fileID: 0}
+  winner: {fileID: 1139842751}
   Health: {fileID: 1410367245}
-  MaxHP: 0
-  CurrentHp: 0
+  MaxHP: 10
+  CurrentHp: 10
 --- !u!4 &631397648
 Transform:
   m_ObjectHideFlags: 0
@@ -22778,7 +22789,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 671681894}
-  m_LocalRotation: {x: 0.48000517, y: 0.000000030189142, z: -0.00000001651831, w: 0.8772657}
+  m_LocalRotation: {x: 0.48000517, y: -0.000000030189128, z: 0.000000016518301, w: 0.8772657}
   m_LocalPosition: {x: 1.6, y: 19.29, z: -18.900002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -33400,7 +33411,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.48000517, y: 0.000000030189142, z: -0.00000001651831, w: 0.8772657}
+  m_LocalRotation: {x: 0.48000517, y: -0.000000030189128, z: 0.000000016518301, w: 0.8772657}
   m_LocalPosition: {x: 1.6, y: 19.29, z: -18.900002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -33587,6 +33598,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1917419212}
+  GetEmBoys: 0
 --- !u!65 &965269885
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33595,7 +33607,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 965269883}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 4.0749354, z: 1}
@@ -33614,7 +33626,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 84
   m_CollisionDetection: 0
 --- !u!1001 &965467999
 PrefabInstance:
@@ -57304,6 +57316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1917419212}
+  GetEmBoys: 0
 --- !u!65 &1655084350
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -57312,7 +57325,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1655084348}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 4.0749354, z: 1}
@@ -57331,7 +57344,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 84
   m_CollisionDetection: 0
 --- !u!4 &1655365238 stripped
 Transform:
@@ -65372,6 +65385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1917419212}
+  GetEmBoys: 0
 --- !u!65 &1874239174
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -65380,7 +65394,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1874239172}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 4.0749354, z: 1}
@@ -65399,7 +65413,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 84
   m_CollisionDetection: 0
 --- !u!1 &1877346245 stripped
 GameObject:
@@ -66084,6 +66098,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1917419212}
+  GetEmBoys: 0
 --- !u!65 &1896238345
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -66092,7 +66107,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1896238343}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 4.0749354, z: 1}
@@ -66111,7 +66126,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 84
   m_CollisionDetection: 0
 --- !u!1 &1896846787 stripped
 GameObject:
@@ -66679,6 +66694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1917419212}
+  GetEmBoys: 0
 --- !u!65 &1914256626
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -66687,7 +66703,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1914256624}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 4.0749354, z: 1}
@@ -66706,7 +66722,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 84
   m_CollisionDetection: 0
 --- !u!1001 &1914319160
 PrefabInstance:
@@ -71749,7 +71765,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2046428970}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 4.0749354, z: 1}
@@ -71767,6 +71783,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1917419212}
+  GetEmBoys: 0
 --- !u!4 &2046428973 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e6994b46315bf0144be06696474b9c8e, type: 3}
@@ -71786,7 +71803,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 84
   m_CollisionDetection: 0
 --- !u!1001 &2046842087
 PrefabInstance:
