@@ -39,6 +39,7 @@ public class Gamemanager : MonoBehaviour
         Time.timeScale = 1;
         gameUi.gameObject.SetActive(true);
         Mainmenue.gameObject.SetActive(false);
+        enemy.enemyS.activate();
     }
     public void pausebutton()
     {
@@ -81,7 +82,7 @@ public class Gamemanager : MonoBehaviour
     {
         if(CurrentHp > 1)
         {
-            StartCoroutine(Hploss());
+            CurrentHp = CurrentHp - 1;
         }
         else
         {
@@ -94,11 +95,5 @@ public class Gamemanager : MonoBehaviour
         {
             CurrentHp = CurrentHp + 1;
         }
-    }
-    IEnumerator Hploss()
-    {
-        yield return new WaitForSeconds(3f);
-        CurrentHp = CurrentHp - 1;
-        
     }
 }
