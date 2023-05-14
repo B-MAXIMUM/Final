@@ -35,5 +35,9 @@ public class Player : MonoBehaviour
         {
             Gamemanager.Instance.looseHpOrDeath();
         }
+        if(other.gameObject.CompareTag("Win"))
+        {
+            Gamemanager.Instance.win();
+        }
     }
 }
