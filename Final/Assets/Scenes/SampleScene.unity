@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.45139843, g: 0.50089425, b: 0.57233065, a: 1}
+  m_IndirectSpecularColor: {r: 0.45139807, g: 0.5008937, b: 0.5723304, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -21459,6 +21459,11 @@ MonoBehaviour:
   HelpPanel: {fileID: 1984044622}
   winner: {fileID: 1139842751}
   Health: {fileID: 1410367245}
+  MainM: {fileID: 8300000, guid: c35b3a35c195b3f4b84a484f0931b6bf, type: 3}
+  Ded: {fileID: 8300000, guid: ea10c184ea7d80c4e9e945746a64fcd5, type: 3}
+  Win: {fileID: 8300000, guid: c83d4b3972fee474ba87656b7ea969b0, type: 3}
+  game: {fileID: 8300000, guid: 9c2b5934f88709e4ea75577d99b3507f, type: 3}
+  instructions: {fileID: 8300000, guid: c6b34fa734eea194e8a2ea48b60c0d6e, type: 3}
   MaxHP: 10
   CurrentHp: 10
 --- !u!4 &631397648
@@ -27782,6 +27787,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _moveSpeed: 10
+  walk: {fileID: 0}
 --- !u!1 &780725518 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 65251b64005f93146bea50ccac5d0655, type: 3}
@@ -54179,7 +54185,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1543183660}
-  m_LocalRotation: {x: 0.30375218, y: 0.116320506, z: -0.037393596, w: 0.9448841}
+  m_LocalRotation: {x: 0.30375218, y: 0.11632055, z: -0.03739361, w: 0.9448841}
   m_LocalPosition: {x: -0.72760683, y: 2.5, z: -0.84887487}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -68057,6 +68063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _moveSpeed: 10
+  walk: {fileID: 8300000, guid: 3483c71b447436049aa7636fbaab437b, type: 3}
 --- !u!4 &1917419212 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e6994b46315bf0144be06696474b9c8e, type: 3}

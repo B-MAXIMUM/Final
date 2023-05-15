@@ -16,6 +16,12 @@ public class Gamemanager : MonoBehaviour
     public GameObject HelpPanel;
     public GameObject winner;
     public Slider Health;
+    public AudioClip MainM;
+    public AudioClip Ded;
+    public AudioClip Win;
+    public AudioClip game;
+    public AudioClip instructions;
+
     [SerializeField] private int MaxHP;
     [SerializeField] private int CurrentHp;
     void Awake()
