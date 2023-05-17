@@ -21,6 +21,7 @@ public class Gamemanager : MonoBehaviour
     public AudioClip Win;
     public AudioClip game;
     public AudioClip instructions;
+    private AudioSource _Gaud;
 
     [SerializeField] private int MaxHP;
     [SerializeField] private int CurrentHp;
@@ -32,7 +33,10 @@ public class Gamemanager : MonoBehaviour
     {
         Time.timeScale = 0;
         Health.maxValue = MaxHP;
-        
+        _Gaud = GetComponent<AudioSource>();
+        _Gaud.loop = true;
+        _Gaud.clip = MainM;
+        _Gaud.Play();
     }
 
     // Update is called once per frame
@@ -46,6 +50,9 @@ public class Gamemanager : MonoBehaviour
         gameUi.gameObject.SetActive(true);
         Mainmenue.gameObject.SetActive(false);
         enemy.enemyS.activate();
+        _Gaud.Stop();
+        _Gaud.clip = game;
+        _Gaud.Play();
     }
     public void pausebutton()
     {
@@ -59,7 +66,7 @@ public class Gamemanager : MonoBehaviour
     }
     public void quitbutton()
     {
-        
+        Application.Quit();
     }
     public void Resumebutton()
     {
@@ -72,17 +79,27 @@ public class Gamemanager : MonoBehaviour
         Time.timeScale = 0;
         gameoverpannel.gameObject.SetActive(true);
         gameUi.gameObject.SetActive(false);
+        _Gaud.Stop();
+        _Gaud.clip = Ded;
+        _Gaud.Play();
     }
     public void help()
     {
         Mainmenue.gameObject.SetActive(false);
         HelpPanel.gameObject.SetActive(true);
+        _Gaud.Stop();
+        _Gaud.clip = instructions;
+        _Gaud.Play();
     }
     public void win()
     {
         Time.timeScale = 0;
         winner.gameObject.SetActive(true);
         gameUi.gameObject.SetActive(false);
+        _Gaud.loop = false;
+        _Gaud.Stop();
+        _Gaud.clip = Win;
+        _Gaud.Play();
     }
     public void looseHpOrDeath()
     {
